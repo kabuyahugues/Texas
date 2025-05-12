@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+.nodeco{
+    text-decoration: none;
+}
+
 ul{
     li{
         list-style: none;
@@ -25,7 +29,7 @@ p{
 }
 
 .marginBottom{
-    margin-bottom: $spacingLg;
+    margin-bottom: $spacingMd;
 }
 
 .boder-bottom{
@@ -40,6 +44,14 @@ p{
 .block{
     position: relative;
     height: 100%;
+}
+
+.container-flex{
+    @include flexCenter();
+}
+
+.colmun{
+    flex-direction: column;
 }
 
 .container-grid{
@@ -89,11 +101,15 @@ p{
 }
 
 .blanc{
-    color: $blanc;
+    color: $blanc !important;
 }
 
 .grisf{
     color: $grisf;
+}
+
+.bleuf{
+    color: $bleuf;
 }
 
 .img{
@@ -120,3 +136,56 @@ p{
         margin: auto;
     }
 }
+
+
+// texas
+
+.titre-fleche{
+    color: $bleuf;
+    margin-bottom: $spacinsSm;
+    p{
+        font-weight: bold;
+        font-size: $gText;
+        display: inline-block;
+    }
+    img{
+        display: inline-block;
+        width: 20px;
+        margin-left: 5px;
+    }
+}
+
+h2{
+    font-size: $mTitle;
+}
+
+h3{
+    font-size: $pTitle;
+}
+
+h4{
+    font-size: $gText;
+}
+
+.moyenp{
+    font-size: $gText;
+}
+.petitp{
+    font-size: $pText;
+}
+
+.btn{
+    display: inline-block;
+    text-wrap: nowrap;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: $gText;
+}
+
+.none{
+    @media screen AND (min-width: 700px) {
+        display: none !important;
+    }
+}
+

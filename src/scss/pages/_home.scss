@@ -1,1 +1,146 @@
 @use '../abstracts' as *;
+
+
+.texas{
+    text-align: center;
+    padding: $spacingLg 0;
+    .textb{
+        padding: 4rem 6rem;
+        .thomas{
+            font-size: $pTitle;
+            color: $bleuf;
+        }
+        p{
+            font-size: $gText;
+            color: $bleuf;
+            font-weight: bold;
+            font-style: italic;
+            margin: $spacingMd 0;
+        }
+    }
+}
+
+.waphouston{
+    background-color: $bleuf;
+}
+
+.houston{
+    padding: $spacingXl 0;
+    .photo{
+        text-align: center;
+        .img-rond{
+            width: 60%;
+            display: inline-block;
+            position: relative;
+            border-radius: 200px;
+            border: 14px solid #3969bf;
+            img{
+                border-radius: 200px;
+            }
+            .sticker{
+                position: absolute;
+                z-index: 1;
+                bottom: -7%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                p{
+                    text-wrap: nowrap;
+                    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(42, 123, 155, 1) 100%);
+                    padding: 0.5rem 1rem;
+                    border-radius: 20px;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+    .text{
+        text-align: center;
+        color:$blanc;
+        .btn{
+            background-color: $blanc;
+        }
+    }
+}
+
+.Legacy{
+    padding: $spacingXl 0;
+    .texth{
+        text-align: center;
+    }
+    .background{
+        background-color: #f3f5f9;
+        padding: 1.5rem 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #cfd0d3;
+        margin-bottom: $spacingMd;
+    }
+    a{
+        color: black;
+        h3{
+            font-weight: 400;
+        }
+        hr{
+            margin: $spacingXl 0 $spacingMd 0;
+            border: 2px solid;
+            color: rgb(160, 160, 160);
+            width: 20%;
+        }
+    }
+    .reverse{
+        background-color: rgb(44, 44, 44);
+        a{
+            color: $blanc;
+            hr{
+                color: $blanc;
+            }
+        }
+    }
+}
+
+.wapsociete{
+    background-color: $bleuf;
+}
+
+.societe{
+    padding: 2rem 0 4rem 0;
+}
+
+.wapformer{
+    background-color: $bleuf;
+}
+
+.former{
+    color: $blanc;
+    padding: 3rem 0;
+    text-align: center;
+    a{
+        color: $blanc;
+    }
+    p{
+        margin-top: $spacingMd;
+    }
+    .btn{
+        background-color: #3969bf;
+    }
+}
+
+.wapfooter{
+    background: #222;
+    color: $blanc;
+    text-align: center;
+    padding: $spacingXl;
+}
+
+.footer{
+    .reseau{
+        margin: $spacingXl 0;
+        gap: 0.5rem;
+    }
+
+    p{
+        font-size: $pText;
+    }
+    .nodeco{
+        color: $blanc;
+    }
+}

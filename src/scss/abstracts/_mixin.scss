@@ -39,6 +39,11 @@
     align-items: $align;
 }
 
+@mixin flexMixin($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+}
+
 @mixin transition($property: all, $duration: 0.3s, $timing-function: ease-in-out) {
     transition: $property $duration $timing-function;
 }
