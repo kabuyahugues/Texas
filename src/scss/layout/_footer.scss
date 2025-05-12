@@ -1,1 +1,46 @@
 @use '../abstracts' as *;
+
+.wapfooter{
+    background: #222;
+    color: $blanc;
+    text-align: center;
+    padding: $spacingXl;
+}
+
+.footer{
+    @media screen and (min-width: 700px) {
+        text-align: center;
+    }
+    .reseau{
+        margin: $spacingXl 0;
+        gap: 0.5rem;
+        img{
+            filter: invert(100%);
+            width: 24px;
+            height: 24px;
+            @media screen and (min-width: 700px) {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    p{
+        font-size: $pText;
+    }
+    .nodeco{
+        color: $blanc;
+    }
+    .textal{
+        text-align: left;
+    }
+    .certif{
+        @media screen and (min-width: 700px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    img{
+        display: inline-block;
+    }
+}

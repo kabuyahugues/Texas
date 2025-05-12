@@ -1,13 +1,34 @@
 @use '../abstracts' as *;
 
-
+.wappertexas{
+    background-color: $blanc;
+}
 .texas{
-    text-align: center;
     padding: $spacingLg 0;
+    @media screen and (max-width: 1368px) {
+        text-align: center;
+    }
+    @media screen and (min-width: 700px) {
+        padding: 6rem 0;
+    }
+    .texth{
+        a{
+            @media screen and (min-width: 700px) {
+                transition: all 0.2s ease-in-out;
+             &:hover{
+                text-decoration: none;
+             }
+            }
+        }
+    }
     .textb{
         padding: 4rem 6rem;
         .thomas{
-            font-size: $pTitle;
+            font-family: 'Libre Baskerville', serif;
+            @media screen and (min-width: 1368) {
+            text-align: center;
+            }
+            font-size: $gTitle;
             color: $bleuf;
         }
         p{
@@ -16,6 +37,9 @@
             font-weight: bold;
             font-style: italic;
             margin: $spacingMd 0;
+            @media screen and (min-width: 1368px) {
+                text-align: center;
+            }
         }
     }
 }
@@ -34,6 +58,13 @@
             position: relative;
             border-radius: 200px;
             border: 14px solid #3969bf;
+            @media screen and (min-width: 700px) {
+                width: 30%;
+            }
+            @media screen and (min-width: 1250px) {
+                border-radius: 220px;
+                border: 18px solid #3969bf;
+            }
             img{
                 border-radius: 200px;
             }
@@ -43,6 +74,13 @@
                 bottom: -7%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                @media screen and (min-width: 700px) {
+                    bottom: -12%;
+                }
+
+                @media screen and (min-width: 1250px) {
+                    bottom: -10%;
+                }
                 p{
                     text-wrap: nowrap;
                     background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(42, 123, 155, 1) 100%);
@@ -54,18 +92,32 @@
         }
     }
     .text{
-        text-align: center;
         color:$blanc;
+        @media screen and (max-width: 1368px) {
+            text-align: center;
+        }
         .btn{
             background-color: $blanc;
+            @media screen and (min-width: 700px) {
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    background-color: $black;
+                    color: $blanc !important;
+                }
+            }
         }
     }
 }
 
+.waplegaci{
+    background-color: $blanc;
+}
 .Legacy{
     padding: $spacingXl 0;
     .texth{
-        text-align: center;
+        @media screen and (max-width: 1386px) {
+            text-align: center;
+        }
     }
     .background{
         background-color: #f3f5f9;
@@ -73,9 +125,18 @@
         border-radius: 10px;
         box-shadow: 0px 0px 10px #cfd0d3;
         margin-bottom: $spacingMd;
+        @media screen and (min-width: 700px) {
+            position: relative;
+            top: 0%;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                top: -3%;
+            }
+        }
     }
     a{
         color: black;
+
         h3{
             font-weight: 400;
         }
@@ -85,6 +146,18 @@
             color: rgb(160, 160, 160);
             width: 20%;
         }
+        @media screen and (min-width: 700px) {
+            transition: all 1s ease-in-out;
+            &:hover p{
+                color: $bleuf;
+            }
+            &:hover hr{
+                color: $bleuf;
+                width: 100%;
+            }
+
+        }
+
     }
     .reverse{
         background-color: rgb(44, 44, 44);
@@ -93,26 +166,51 @@
             hr{
                 color: $blanc;
             }
+
+        }
+        @media screen and (min-width: 700px) {
+            transition: all 1s ease-in-out;
+            &:hover p{
+                color: $blanc !important;
+            }
+            &:hover hr{
+                color: $bleuf;
+                width: 100%;
+            }
         }
     }
 }
 
 .wapsociete{
-    background-color: $bleuf;
+    background-color: #0744af;
 }
 
 .societe{
     padding: 2rem 0 4rem 0;
+    @media screen and (min-width: 700px) {
+        gap: 2rem;
+        padding: 4rem 0 4rem 0;
+    }
 }
 
 .wapformer{
-    background-color: $bleuf;
+    position: relative;
+    img{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 300vw;
+        height: 100vh;
+    }
 }
 
 .former{
     color: $blanc;
     padding: 3rem 0;
-    text-align: center;
+    @media screen and (max-width: 1368px) {
+        text-align: center;
+    }
     a{
         color: $blanc;
     }
@@ -121,26 +219,12 @@
     }
     .btn{
         background-color: #3969bf;
-    }
-}
-
-.wapfooter{
-    background: #222;
-    color: $blanc;
-    text-align: center;
-    padding: $spacingXl;
-}
-
-.footer{
-    .reseau{
-        margin: $spacingXl 0;
-        gap: 0.5rem;
-    }
-
-    p{
-        font-size: $pText;
-    }
-    .nodeco{
-        color: $blanc;
+        @media screen and (min-width: 700px) {
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                background-color: $blanc;
+                color: #3969bf;
+            }
+        }
     }
 }
