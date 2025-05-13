@@ -272,3 +272,37 @@ p{
     }
 }
 
+.bonhome{
+    background-color: #0048ff;
+    position: fixed;
+    border-radius: 500px;
+    bottom: 5%;
+    left: 2%;
+    z-index: 2;
+}
+
+.bandrole{
+    background-color: $bleuf;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid $blanc;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    *{
+        display: inline-block;
+
+    }
+    p{
+        color: $blanc;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    img{
+        filter: invert(100%);
+        margin-right: 1rem;
+    }
+}
+
