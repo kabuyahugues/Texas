@@ -22,7 +22,28 @@
         }
     }
     .textb{
+        .quot1{
+            &::before{
+                display:inline-block;
+                content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA80lEQVR4nO2UQWoCUQyGIzgvWPduPIb0AiYWFffeoPfoMbouLucF9AKCq0Jx5QHE2XiB0o0wMjNMmEIpVl5c1PdBlt//HiEJQORu6QxXfWR5dyybW3gVs+UDst8iS47sd2Dt1SD7RSVLnpDMwdgrcSzTWnbsjzB4TcDQU5DkQwNI3sDYK2lT+ljLZZE8g6GnIMlLMyB5kgEYeoojWTcDuqO0B4ae4lj2jXadAPIWGHoKkv9s/PwLjD3l24D8UI4lc0M/CeVdHFCtij+E8v4UUFQoT4kPY2w1x+EKtE6OJbvmEFzrKcVZ+y2kkJHScSgv8r85A1oKauEj3xS0AAAAAElFTkSuQmCC");
+                width: 40px;
+                height: 50px;
+            }
+            
+        }
+        .quot2{
+            &::before{
+                display:inline-block;
+                content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACT0lEQVR4nO2XvWsUQRTAp8jOnBpFC0sLvwVBREHU5rx9b48TFRFUtBBsUvnX2AiKothIlr33bhMJKIhgY6WCKAEFwQ+wMtG7GBWCypyemJk1x87upnF+MN3e733Mu9lZITwej8fj8eSkfn9EHLm9bsmlnylKrckbFFKikLoK+cfSSz9DLBud7f/ySaBtEvmuAl4Y6gNekMD3goh3uycP/GF44mZgmtG/NX2qQZsVci+3D7mnINmUu4Bfnc8dbNC92PbxpLuPUpcCugUCfrJ8QHPOPuSeQwHOwfqrat9QfAEGfgfy4kfIwI/QfzhC1C23AJpd7gK4QMB5ywc87uwDmstdgL5V6ouZS0AJ/NAqIEo3SuT3Tj6kB6LAjTTWd5tcAaPOiSzfaCteL5GvSeS3/eZAxsryhXRYVEGAdDoj4C1Xn0Ias7vPl8rNehCsmW6xdgb4hTjYWe3iCxrpTgX0eXEB9FTsj1eUn31rSimkx0a3vjh/PUV3Vimk54avJ5vJDlEFelvt0aGxAr4bpq+GfK7crAfBws5J+5jjcVdfgHQ249S5Kqrg93ftx8VHJr0Urak1Lj6JyVb7hUnPxNGJleVnv/dyoM934wXzNQjbe5x89es1BfTE+h+F6S5RBQr5ojU6UfuCq08CX7F9fL7crP8Eo+MK6bux1YmrLwjbZ+y3N90UVaGAp41gr0Sd17r6JNJr4xCYFvV4VFSFQn70V7BvIyHtK7Eh85XN/YAa0AHdNYn0TkZ0qqhPAR/qu4DeyIiPlZOlx+PxeDwesez8BNdS3GnnQXJKAAAAAElFTkSuQmCC");
+                width: 40px;
+                height: 50px;
+            }
+        }
+
         padding: 4rem 6rem;
+        @media screen and (min-width: 700px) {
+         
+        }
         .thomas{
             font-family: 'Libre Baskerville', serif;
             @media screen and (min-width: 1368) {
@@ -30,6 +51,10 @@
             }
             font-size: $gTitle;
             color: $bleuf;
+
+        }
+        img{
+
         }
         p{
             font-size: $gText;
@@ -64,6 +89,7 @@
             @media screen and (min-width: 1250px) {
                 border-radius: 220px;
                 border: 18px solid #3969bf;
+                width: 40%;
             }
             img{
                 border-radius: 200px;
@@ -114,6 +140,12 @@
 }
 .Legacy{
     padding: $spacingXl 0;
+    position: relative;
+    .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     .texth{
         @media screen and (max-width: 1386px) {
             text-align: center;

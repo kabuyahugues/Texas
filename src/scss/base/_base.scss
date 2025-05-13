@@ -187,6 +187,7 @@ p{
         display: inline-block;
         width: 20px;
         margin-left: 5px;
+        filter: invert(100%);
     }
 }
 
@@ -250,6 +251,11 @@ p{
 
 .none{
     @media screen AND (min-width: 700px) {
+        display: none !important;
+    }
+}
+.none-min{
+    @media screen AND (min-width: 1368px) {
         display: none !important;
     }
 }
